@@ -15,7 +15,7 @@
     </style>
 </head>
 
-<body>
+<body background="img/bgimage.jpg">
 
     <div id="root"></div>
     <div id="root2"></div>
@@ -74,7 +74,7 @@ var imgOf = {};
 
 
 var author = []
-var quotess = []
+var tabOfQuotes = []
 
 
 for (var i =0;i<quotes.length;i++)
@@ -82,7 +82,7 @@ for (var i =0;i<quotes.length;i++)
 
 author.push(quotes[i].author);
 
-quotess.push(quotes[i].quote);
+tabOfQuotes.push(quotes[i].quote);
 
 }
     
@@ -182,13 +182,13 @@ quotess.push(quotes[i].quote);
     });
 	
 
-function ChaineAleatoire(nbcar)
+function ChaineAleatoire(nbquote)
 {
-	var ListeCar = quotess;
+	var ListQuote = tabOfQuotes;
 	var Chaine ='';
-	for(i = 0; i < nbcar; i++)
+	for(i = 0; i < nbquote; i++)
 	{
-		Chaine = Chaine + ListeCar[Math.floor(Math.random()*ListeCar.length)];
+		Chaine = Chaine + ListQuote[Math.floor(Math.random()*ListQuote.length)];
 	}
 	
 	
